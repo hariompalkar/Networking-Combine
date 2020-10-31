@@ -14,9 +14,11 @@ struct APIClient {
         let value: T
         let response: URLResponse
     }
+    // get data
     func run<T: Decodable>(_ request: URLRequest) -> AnyPublisher<Response<T>, Error> { // 2
             return URLSession.shared
                 .dataTaskPublisher(for: request) // 3
+                .retry(3)
                 .tryMap { result -> Response<T> in
                     let value = try JSONDecoder().decode(T.self, from: result.data) // 4
                     return Response(value: value, response: result.response) // 5
@@ -24,4 +26,8 @@ struct APIClient {
                 .receive(on: DispatchQueue.main) // 6
                 .eraseToAnyPublisher() // 7
         }
+    
+    // post
+    // delete
+    // put
     }

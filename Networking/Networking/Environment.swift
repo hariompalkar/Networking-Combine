@@ -10,7 +10,7 @@ import SwiftUI
 
 public enum ServerEnvironment: String, Codable, Hashable {
     public static var active: Self {
-        .debug
+        .local
     }
     case temporary
     case debug
@@ -31,7 +31,7 @@ extension ServerEnvironment {
         case .production:
             return String("https://")
         case .local:
-            return String("http://2aba0c73eae3.ngrok.io")
+            return String("https://5519addf453f.ngrok.io")
         }
     }
 }
