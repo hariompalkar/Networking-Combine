@@ -30,8 +30,8 @@ struct User: Codable, Identifiable {
 
     enum CodingKeys: String, CodingKey {
         case uid = "id"
-        case name = "original_title"
-        case profilePicture
+        case name = "user_name"
+        case profilePicture = "profile_pic"
     }
 }
 

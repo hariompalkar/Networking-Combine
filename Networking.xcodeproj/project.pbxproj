@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE19DD0E25514E9900FE8026 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE19DD0D25514E9900FE8026 /* UserViewModel.swift */; };
 		BE4FA1D4254B7A9A00236BFE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4FA1D3254B7A9A00236BFE /* Model.swift */; };
 		BE60704325468E5C004759D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE60704225468E5C004759D0 /* AppDelegate.swift */; };
 		BE60704525468E5C004759D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE60704425468E5C004759D0 /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE19DD0D25514E9900FE8026 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		BE4FA1D3254B7A9A00236BFE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		BE60703F25468E5C004759D0 /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE60704225468E5C004759D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				BE60705E25468F62004759D0 /* ViewModel.swift */,
+				BE19DD0D25514E9900FE8026 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -116,10 +119,10 @@
 			children = (
 				BE60704225468E5C004759D0 /* AppDelegate.swift */,
 				BE60704425468E5C004759D0 /* SceneDelegate.swift */,
+				BE4FA1D2254B7A7300236BFE /* Networking */,
 				BE4FA1DA254B7AC600236BFE /* Model */,
 				BE4FA1D8254B7AB400236BFE /* View */,
 				BE4FA1DC254B7ACF00236BFE /* ViewModel */,
-				BE4FA1D2254B7A7300236BFE /* Networking */,
 				BEF4F30F254C17F400EB12CE /* Resources */,
 				BE60705025468E5F004759D0 /* Info.plist */,
 				BE4FA1DE254B7AE700236BFE /* Helpers */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE60704325468E5C004759D0 /* AppDelegate.swift in Sources */,
+				BE19DD0E25514E9900FE8026 /* UserViewModel.swift in Sources */,
 				BE60706225469021004759D0 /* APIClient.swift in Sources */,
 				BE607066254690E7004759D0 /* Endpoint.swift in Sources */,
 				BE60706925469221004759D0 /* Environment.swift in Sources */,

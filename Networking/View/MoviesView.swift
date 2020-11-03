@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct MoviesView: View {
-    @ObservedObject var viewModel = MovieViewModel() // change the model name acc to requirenments
+    @ObservedObject var viewModel = MovieViewModel()
+    // change the model name acc to requirenments
+    
     var body: some View {
-        List(viewModel.movies) { movie in // 2
+        List(viewModel.movies) { movie in
             HStack {
                 VStack(alignment: .leading) {
-                    Text(movie.title) // 3a
+                    Text(movie.title)
                         .font(.headline)
-                    Text(movie.originalTitle) // 3b
+                    Text(movie.originalTitle) 
                         .font(.subheadline)
                 }
             }
